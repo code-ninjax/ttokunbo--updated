@@ -1,0 +1,617 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    --footer-bg: #0A142F;
+    --faqs-bg: linear-gradient(180deg, #ECECEC 0%, #C8BEBE 100%);
+    --why-choose-us-bg: #0D210E;
+    --why-choose-us-content-clr: #1C1A1A;
+    --about-bg: #D5D5D5;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      --button-clr: #3C653D;
+}
+/* custom size properties */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+body{
+    overflow-x: hidden;
+}
+/* this is the styling for the navbar */
+.navbar{
+    padding: 35px 7%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    transition: all .50s ease;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.sidebar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: var(--button-clr);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+#menu-icon{
+    font-size: 20px;
+    display: none;
+}
+.sidebar li{
+    padding: 40px 50px;
+    text-align: center;
+}
+.navbar .nav-list{
+    display: flex;
+    gap: 2rem;
+}
+.navbar .logo{
+    cursor: pointer;
+}
+.navbar .nav-list li{
+    cursor: pointer;
+}
+.navbar .nav-list li a{
+    transition: all 0.5s ease;
+}
+.navbar .nav-list li a:hover{
+    color: #0D210E;
+}
+/* before hero section  */
+.before{
+    padding-block-start: 50px;
+    text-align: center;
+}
+.before h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+/* hero section styling  */
+.hero{
+    overflow: auto;
+}
+.hero .text{
+    text-align: left;
+    float: left;
+}
+.hero .text h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+.hero .text div{
+    padding-top: 50px;
+}
+    
+.hero .image{
+    text-align: left;
+    float: left;
+}
+.hero .text h5{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: capitalize;
+}
+.hero,.text{
+    padding: 50px;
+}
+/* this is the styling for the text under the hero  */
+.under-hero{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.under-hero h2{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: capitalize;
+    padding-bottom: 50px;
+}
+/* email styling */
+.email button{
+    padding: 10px;
+    background-color: var(--button-clr);
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.email button:hover{
+    color: #3C653D;
+    background: #fff;
+    border: 1px solid #3C653D;
+}
+
+input[type="email"] {
+    color: grey;
+    border: 2px solid grey;
+    margin-left: 100px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: capitalize;
+    padding: 10px;
+    /* width: 300px; */
+    border-radius: 3px;
+}
+/* business plan styling */
+.business-plan{
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 100px; */
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: capitalize;
+    overflow: auto;
+
+}
+.business-plan .text{
+    width: 590px;
+    height: 345px;
+    margin-top: 70px;
+    float: left;
+}
+.business-plan .card{
+    background-color: var(--footer-bg);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    text-align: left;
+    box-shadow: 20px 20px 0 #ccc;
+}
+
+.business-plan .image{
+    text-align: right;
+    float: left;
+}
+/* this is styling for the service */
+.service .image{
+    text-align: center;
+}
+.service .image img{
+    text-align: center;
+    padding: 50px;
+}
+/* why choose us styling */
+.why-choose-us{
+    background: var(--why-choose-us-bg);
+    padding: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: capitalize;
+    color: #fff;
+
+}
+.why-choose-us .title{
+    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: normal;
+    text-transform: capitalize;
+    text-align: center;
+    color: #fff;
+
+}
+.why-choose-us .grid{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.why-choose-us .grid .content .text{
+    background-color:#1C1A1A;
+}
+.why-choose-us .grid .content .img{
+    width: 58px;
+    height: 64px;
+    text-align: center;
+    margin: 0 auto;
+}
+.why-choose-us .grid .content .img img{
+    width: 100%;
+    height: 100%;
+}
+
+/* how it works styling */
+.how-it-works{
+    padding: 30px 70px;
+    border-bottom: 3px dashed black;
+
+}
+.how-it-works h1{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: normal;
+    text-transform: capitalize;
+    text-decoration: underline;    
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+.how-it-works ul {
+    list-style-type: disc;
+    margin-left: 50px;
+    line-height: 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: capitalize;
+
+}
+
+/* frequently asked questions styling */
+.faqs{
+    padding: 70px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: var(--faqs-bg);
+    border-bottom: 2px solid #fff;
+}
+
+.faqs h1{
+    text-align: center;
+    text-decoration: underline;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: normal;
+    text-transform: capitalize;
+    font-size: 50px;
+    margin-bottom: 100px;
+}
+.faqs ul{
+    list-style-type: disc;
+}
+.faqs span{
+    font-weight: 1000;
+}
+.faqs .content{
+    padding-left: 100px;
+    margin-bottom: 50px;
+}
+
+footer{
+    padding: 75px;
+    background-color: var(--footer-bg);
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+.footer{
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+input[placeholder="Get product updates"] {
+    border: 2px solid white;
+    background: #fff;
+    color: #ccc;
+    padding: 10px 20px;
+    border-radius: 2px;
+}
+.footer button{
+    background: #3C653D;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 2px;
+}
+.footer .grid div{
+    padding-bottom: 20px;
+}
+
+.socials{
+    padding: 50px;
+    border-top: 2px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.socials .icons img{
+    width: 35px;
+    height: 32.8;
+}
+.socials .product .sub{
+    text-align: right;
+}
+
+
+
+
+
+/* responsive design */
+@media(max-width: 1770px){
+  
+}
+
+
+@media(max-width: 1670px){
+
+}
+
+
+
+@media(max-width: 1370px){
+   
+}
+
+
+
+@media(max-width: 1150px){
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+    
+   .hide-on-mobile{
+        display: none;
+   }
+   #menu-icon{
+    font-size: 20px;
+    display: block}
+
+}
+
+
+
+@media(max-width: 950px){
+    .col-sm-1 {width: 8.33%;}
+    .col-sm-2 {width: 16.66%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: 33.33%;}
+    .col-sm-5 {width: 41.66%;}
+    .col-sm-6 {width: 50%;}
+    .col-sm-7 {width: 58.33%;}
+    .col-sm-8 {width: 66.66%;}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: 83.33%;}
+    .col-sm-11 {width: 91.66%;}
+    .col-sm-12 {width: 100%;}
+    .hero{
+        text-align: center;
+    }
+    .hero .text{
+
+    }
+    .hero{
+        text-align: center;
+        padding: 20px;
+    }
+    .hero .text{
+        text-align: center;
+    }
+    .hero .text h1{
+        font-size: 25px;
+    }
+    .hero .text h5{
+        font-size: 10px;
+    }
+    .hero .image{
+        text-align: center;
+    }
+    .before{
+        font-size: 13px;
+    }
+    .email{
+        text-align: center;
+    }
+    .business-plan{
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+    .business-plan .image{
+        padding: 0;
+    }
+    .business-plan .text{
+        padding-top: 0;
+        width: 100vw;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .business-plan .card{
+        padding: 5px 15px;
+        font-size: 10px;
+        line-height: 18px;
+    }
+    .why-choose-us .title{
+        font-size: 30px;
+    }
+    .why-choose-us .grid{
+        grid-template-columns: 1fr;
+    } 
+
+    .how-it-works{
+        padding: 20px 20px;
+    }
+
+    .faqs{
+        padding: 30px;
+    }
+    .faqs h1{
+        margin-bottom: 20px;
+    }
+    .faqs .content{
+        padding-left: 50px;
+    }
+    .how-it-works h1{
+        margin-bottom: 10px;
+    }
+    footer{
+        padding: 0;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .socials{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    input[type="email"] {
+        margin-left: 50px;
+    }
+    .sidebar{
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 570px){
+  
+
+
+}
+
+@media(max-width: 440px){
+    .col-tsm-1 {width: 8.33%;}
+    .col-tsm-2 {width: 16.66%;}
+    .col-tsm-3 {width: 25%;}
+    .col-tsm-4 {width: 33.33%;}
+    .col-tsm-5 {width: 41.66%;}
+    .col-tsm-6 {width: 50%;}
+    .col-tsm-7 {width: 58.33%;}
+    .col-tsm-8 {width: 66.66%;}
+    .col-tsm-9 {width: 75%;}
+    .col-tsm-10 {width: 83.33%;}
+    .col-tsm-11 {width: 91.66%;}
+    .col-tsm-12 {width: 100%;}
+    
+    .hero{
+        text-align: center;
+        padding: 20px;
+    }
+    .hero .text{
+        text-align: center;
+    }
+    .hero .text h1{
+        font-size: 25px;
+    }
+    .hero .text h5{
+        font-size: 10px;
+    }
+    .hero .image{
+        text-align: center;
+    }
+    .before{
+        font-size: 13px;
+    }
+    .email{
+        text-align: center;
+    }
+    .business-plan{
+        grid-template-columns: 1fr;
+    }
+    .business-plan .image{
+        padding: 0;
+    }
+    .business-plan .text{
+        width: 100vw;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .business-plan .card{
+        padding: 5px 20px;
+        font-size: 10px;
+    }
+    .why-choose-us .title{
+        font-size: 30px;
+    }
+    .why-choose-us .grid{
+        grid-template-columns: 1fr;
+    } 
+
+    .how-it-works{
+        padding: 20px 20px;
+    }
+
+    .faqs{
+        padding: 30px;
+    }
+    .faqs h1{
+        margin-bottom: 20px;
+    }
+    .faqs .content{
+        padding-left: 50px;
+    }
+    .how-it-works h1{
+        margin-bottom: 10px;
+    }
+    footer{
+        padding: 0;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .socials{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    input[type="email"] {
+        margin-left: 50px;
+    }
+    .sidebar{
+        width: 100%;
+    }
+}
+@media(max-width: 380px){
+   
+}
+
+
+
+
+
